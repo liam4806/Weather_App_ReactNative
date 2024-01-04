@@ -8,6 +8,8 @@
 
 #### API: https://openweathermap.org/forecast5
 
+Used API from the OpenWeather. This API returns a 5-day forecast data with a 3-hour step. Since another API charges for API calls, I decided to use this free API and **perform data wrangling to fit in an intended usage**.
+
 ## Retrieving data
 ```
 const getPermission = async() =>{
@@ -83,8 +85,6 @@ Used Expo Location to get coordinate data for the API call.
 }
 ```
 The full API response sample is available [here](https://openweathermap.org/forecast5)
-
-Used API from the OpenWeather. This API returns a 5-day forecast data with a 3-hour step. Since another API charges for API calls, I decided to use this free API and perform data wrangling to fit in an intended usage.
 
 # Data Wrangling
 
