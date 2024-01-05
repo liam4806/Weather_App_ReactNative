@@ -159,7 +159,7 @@ The data in this list is used to show the forecast for 21 hours with ScrollView 
 It will save **10 forecasts**. The function will **iterate through the entire JSON** file and **convert the time to the local timezone**. By slicing the date string, it will give a **day data** such as "Tue", "Fri" ..etc. If the **day is not today** which means the **data is for the future forecast**, it will be stored **only if the forecast is for 6 AM and 3 PM**. 
 
 
-The reason why I picked 6 AM and 3 PM is, that since the **response from this API does not contain the minimum and maximum temperature of the day**, I picked two times, **6 AM** for the **minimum temperature**, and **3 PM** for the **maximum temperature** of the day. 
+The reason why I picked 6 AM and 3 PM is, since the **response from this API does not contain the minimum and maximum temperature of the day**, I picked two times, **6 AM** for the **minimum temperature**, and **3 PM** for the **maximum temperature** of the day. 
 
 
 The data will be **stored in an array finallist as an object**. Using an **object is to store minimum & maximum temperature in one object** for convenience and an **array** is used to **store it sequentially** so we don't have to wrangle the data again while displaying. 
