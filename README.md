@@ -11,7 +11,7 @@
 Used API from the OpenWeather. This API returns a 5-day forecast data with a 3-hour step. Since another API charges for API calls, I decided to use this free API and **perform data wrangling to fit in an intended usage**.
 
 ## Retrieving data
-```
+```JavaScript
 const getPermission = async() =>{
       const { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
@@ -38,7 +38,7 @@ Used Expo Location to get coordinate data for the API call.
 # Data Wrangling
 
 ## Daily Forcast
-```
+```JavaScript
   const gettoday = (arr)=>{
     const todaylist = [];
     for(let i=0; i<7; i++){
@@ -66,7 +66,7 @@ The data in this list is used to show the forecast for 21 hours with ScrollView 
 
 ## Weekly Forcast
 
-```
+```JavaScript
   const getweek = (arr)=>{
     const weeklist = {};
     const finallist = [];
@@ -131,7 +131,7 @@ The data of the finallist is used for the lower half of the application to show 
 
 ## Sample API Response
 
-```
+```JSON
 {
   "cod": "200",
   "message": 0,
